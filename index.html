@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Upfront Fee Loans South Africa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Global Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+      color: #fff;
+      background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Fixed Logo on Top Right */
+    .fixed-logo {
+      position: fixed;
+      top: 20px;
+      right: A0px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      z-index: 1100;
+      transition: transform 0.3s ease;
+    }
+    .fixed-logo:hover {
+      transform: scale(1.1);
+    }
+    .fixed-logo img {
+      width: 100px;
+      height: 50px;
+      margin: auto 20px;
+    }
+    /* Branding Section */
+    .branding {
+      margin: 100px auto 20px;
+      text-align: center;
+    }
+    .branding img {
+      max-width: 240x;
+      height: auto;
+    }
+    /* Hero Section */
+    .hero {
+      padding: 40px 20px 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin: 0;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+    .cta-button {
+      margin-top: 30px;
+      background-color: #25D366;
+      padding: 12px 40px;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #128C7E;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Proudly South African Section */
+    .proud-section {
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.75);
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    .proud-section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .flags {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .sa-flag {
+      width: 80px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+    /* Benefits & Eligibility Sections */
+    .section {
+      background: rgba(0, 0, 0, 0.8);
+      margin: 40px 0;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .benefit {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .benefit:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    }
+    .benefit img {
+      max-width: 200x;
+      margin-bottom: 20px;
+      height: 80px;
+    }
+    .benefit h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #FFD700;
+    }
+    .benefit p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    /* "Apply here" Link & WhatsApp Icon in Each Benefit */
+    .apply-text {
+      font-size: 1rem;
+      color: #FFD700;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+    }
+    .whatsapp-icon {
+      width: 40px;
+      height: 40px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/WhatsApp_Icon.png') no-repeat center;
+      background-size: cover;
+      cursor: pointer;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-icon:hover {
+      transform: scale(1.1);
+    }
+    /* Testimonials Slider Section */
+    .testimonials {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 40px 20px;
+      margin: 40px 0;
+      border-radius: 10px;
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .slide {
+      min-width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .slide .quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .slide .client-name {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .slide .stars {
+      font-size: 1.2rem;
+      color: #FFD700;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    }
+    .slider-btn {
+      background: #25D366;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .slider-btn.prev {
+      left: 10px;
+    }
+    .slider-btn.next {
+      right: 10px;
+    }
+    /* Footer Section */
+    .footer {
+      background: #2E3A59;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    .footer p {
+      font-size: 1rem;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 10px 30px;
+      }
+      .benefit {
+        width: 90%;
+      }
+      .sa-flag {
+        width: 60px;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Logo on Top Right that navigates to www.bv.bv -->
+  <div class="fixed-logo" onclick="window.location.href='https://wa.me/+27632334201';">
+    <img src="Image/loan-logo-73-15585-removebg-preview.png" alt="Brand Logo" />
+  </div>
+
+  <!-- Branding Section (Space for Branding Image) -->
+  <section class="branding container">
+    <img src="Image/Personal-Loan-removebg-preview.png" alt="Branding Image" />
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <h1>Welcome to No Upfront Fee Loans South Africa</h1>
+    <p>Get the funds you need without any upfront charges – fast, secure, and reliable!</p>
+    <a href="https://wa.me/+27632334201" class="cta-button">Chat with Us on WhatsApp</a>
+  </section>
+
+  <!-- Proudly South African Section -->
+  <section class="proud-section container">
+    <h2>Proudly South African</h2>
+    <div class="flags">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="SA Flag" class="sa-flag" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="SA Flag" class="sa-flag" />
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section container">
+    <h2>Why Choose Us?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <img src="Image/images-removebg-preview.png" alt="Fast & Easy" />
+        <h3>Fast & Easy</h3>
+        <p>Apply in minutes with quick approval!</p>
+        <a href="https://wa.me/+27632334201" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://wa.me/+27632334201';"></div>
+      </div>
+      <div class="benefit">
+        <img src="Image/images__1_-removebg-preview.png" alt="No Hidden Fees" />
+        <h3>No Hidden Fees</h3>
+        <p>Transparent fees, no surprises!</p>
+        <a href="https://wa.me/+27692479042" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://wa.me/+27632334201';"></div>
+      </div>
+      <div class="benefit">
+        <img src="Image/images__2_-removebg-preview.png" alt="Loans" />
+        <h3>Loans from R400 to R8000</h3>
+        <p>Get the money you need, quickly!</p>
+        <a href="https://wa.me/+27632334201" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://wa.me/+27632334201';"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Section -->
+  <section class="section container">
+    <h2>Eligibility</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <img src="Image/dfw54-removebg-preview.png" />
+        <h3>Minimum Salary</h3>
+        <p>You must earn R5000 or more after deductions.</p>
+        <a href="https://wa.me/+27632334201" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href=' https://wa.me/+27632334201';"></div>
+      </div>
+      <div class="benefit">
+        <img src="Image/ds45-removebg-preview.png" />
+        <h3>Debt Review Status</h3>
+        <p>clients under debt review or blacklisted are welcome.</p>
+        <a href="https://wa.me/+27632334201" class="apply-text">Apply here</a>
+        <div class="whatsapp-icon" onclick="window.location.href='https://wa.me/+27632334201';"></div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Testimonials Slider Section -->
+  <section class="testimonials container">
+    <h2>What Our Clients Say</h2>
+    <div class="slider">
+      <button class="slider-btn prev">&lt;</button>
+      <div class="slides">
+        <!-- Sample Slide 1 -->
+        <div class="slide">
+          <p class="quote">"I got my loan without any fees – the process was super fast and totally transparent!"</p>
+          <p class="client-name">- John Doe</p>
+          <p class="stars">★★★★★</p>
+        </div>
+<!-- Sample Slide 2 -->
+<div class="slide">
+  <p class="quote">"Incredible experience! The process was quick and straightforward, and I had no upfront fees." </p>
+  <p class="client-name">- Sarah Lee</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 3 -->
+<div class="slide">
+  <p class="quote">"So easy to apply! I got the funds I needed in record time with no upfront charges." </p>
+  <p class="client-name">- Michael Brown</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 4 -->
+<div class="slide">
+  <p class="quote">"Fantastic service! The loan process was simple and fast. I will definitely recommend it." </p>
+  <p class="client-name">- Emma Williams</p>
+  <p class="stars">★★★★★</p>
+</div>
+<!-- Sample Slide 5 -->
+<div class="slide">
+  <p class="quote">"I couldn’t believe how quickly my application was processed and approved. Highly recommend!" </p>
+  <p class="client-name">- Jack Martin</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 6 -->
+<div class="slide">
+  <p class="quote">"Amazing customer support! They made sure everything was clear and easy to understand." </p>
+  <p class="client-name">- Olivia Taylor</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 7 -->
+<div class="slide">
+  <p class="quote">"I received the loan with no hassle and no upfront fees. Best experience ever!" </p>
+  <p class="client-name">- William Harris</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 8 -->
+<div class="slide">
+  <p class="quote">"Quick response and easy application process. I'm so relieved I found this service!" </p>
+  <p class="client-name">- Mia Clark</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 9 -->
+<div class="slide">
+  <p class="quote">"The best loan service I’ve ever used. No upfront costs, and the approval was so fast!" </p>
+  <p class="client-name">- James Green</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 10 -->
+<div class="slide">
+  <p class="quote">"Fast and reliable service. I had my loan in no time and no hidden charges." </p>
+  <p class="client-name">- Lucas Scott</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 11 -->
+<div class="slide">
+  <p class="quote">"I’m so grateful for the quick approval and straightforward process. No upfront fees made all the difference!" </p>
+  <p class="client-name">- Isabella King</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 12 -->
+<div class="slide">
+  <p class="quote">"Super easy process! The team was so helpful, and I received my funds fast without paying any upfront fees." </p>
+  <p class="client-name">- Ethan Lewis</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 13 -->
+<div class="slide">
+  <p class="quote">"I was able to get the funds I needed quickly and without worrying about hidden charges." </p>
+  <p class="client-name">- Chloe Walker</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 14 -->
+<div class="slide">
+  <p class="quote">"Quick and transparent! No upfront fee, and the process was much easier than I expected." </p>
+  <p class="client-name">- Liam Hall</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 15 -->
+<div class="slide">
+  <p class="quote">"So happy with my loan experience. No hidden fees, and the approval was super fast!" </p>
+  <p class="client-name">- Zoe Allen</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 16 -->
+<div class="slide">
+  <p class="quote">"The process was hassle-free, and I didn’t have to pay any upfront charges. Thanks for the help!" </p>
+  <p class="client-name">- Jacob Young</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 17 -->
+<div class="slide">
+  <p class="quote">"I never thought getting a loan could be this easy. The process was quick and efficient." </p>
+  <p class="client-name">- Emma White</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 18 -->
+<div class="slide">
+  <p class="quote">"The team was amazing! They made the process clear and fast with no upfront fees." </p>
+  <p class="client-name">- Olivia Davis</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 19 -->
+<div class="slide">
+  <p class="quote">"Excellent service, no hassle, and the approval came through quicker than I expected." </p>
+  <p class="client-name">- Ben Mitchell</p>
+  <p class="stars">★★★★★</p>
+</div>
+
+<!-- Sample Slide 20 -->
+<div class="slide">
+  <p class="quote">"I love how easy it was to apply and get approved without worrying about upfront fees." </p>
+  <p class="client-name">- Ava Nelson</p>
+  <p class="stars">★★★★★</p>
+</div>
+      </div>
+      <button class="slider-btn next">&gt;</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer container">
+    <p>&copy; 2025 No Upfront Fee Loans South Africa. All rights reserved.</p>
+  </footer>
+
+  <!-- Slider JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelector('.slides');
+      const slideItems = document.querySelectorAll('.slide');
+      const prevBtn = document.querySelector('.slider-btn.prev');
+      const nextBtn = document.querySelector('.slider-btn.next');
+      let currentIndex = 0;
+      const totalSlides = slideItems.length;
+      
+      function updateSlidePosition() {
+        slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+      }
+      
+      prevBtn.addEventListener('click', function () {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+        updateSlidePosition();
+      });
+      
+      nextBtn.addEventListener('click', function () {
+        currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+        updateSlidePosition();
+      });
+    });
+  </script>
+</body>
+</html>
