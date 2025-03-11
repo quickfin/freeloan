@@ -48,43 +48,26 @@
       width: 100%;
       height: auto;
     }
-    /* Glassmorphic Container for each section */
+    /* Glassmorphic Container for Each Section (with Neon Outline Only) */
     section.brandin,
-    section.h,
+    section.her,
     section.proud-section,
     section.section,
     section.testimonials,
     footer.footer {
-      background: rgba(255, 255, 255, 0.4); /* 40% opacity white background */
+      background: rgba(255, 255, 255, 0.4); /* 90% white transparent */
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border: 2px solid rgba(255, 255, 255, 0.7);
       border-radius: 10px;
       padding: 40px 20px;
       margin: 20px 0;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
       width: 100%;
       max-width: 1000px;
+      /* Neon Outline using box-shadow only on container border */
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
       position: relative;
       overflow: hidden;
-    }
-    /* Neon Glow Effect */
-    section.branding::before,
-    section.hero::before,
-    section.proud-section::before,
-    section.section::before,
-    section.testimonials::before,
-    footer.footer::before {
-      content: '';
-      position: absolute;
-      top: -5px;
-      left: -5px;
-      right: -5px;
-      bottom: -5px;
-      background: linear-gradient(45deg, #ffffff, #00ffea, #ffffff);
-      z-index: -1;
-      filter: blur(10px);
-      border-radius: 15px;
     }
     /* Ensure text clarity */
     section.branding h2,
@@ -184,6 +167,10 @@
       gap: 20px;
       width: 100%;
       padding: px;
+      .benefit img {
+  max-width: 100px; 
+  height: 100to;
+}
     }
     .benefit {
       background: rgba(0, 0, 0, 0.6);
